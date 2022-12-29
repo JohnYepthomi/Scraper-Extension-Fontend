@@ -1,24 +1,11 @@
-import ModeSelection from "../components/modeselection";
-import NoTask from "../components/notask";
-import Task from "../components/task";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Stack } from "react-bootstrap";
+import ModeSelection from '../components/ModeSelection/ModeSelection';
 
 export default function Home() {
-  return (
-    <Container>
-      <Row>
-        <Col>
-          <ModeSelection />
-        </Col>
-      </Row>
 
-      <Row>
-        <Col>
-          <NoTask />
-        </Col>
-      </Row>
-    </Container>
+  return (
+    <Stack gap={3} className="ms-4 me-4 mt-4 pb-4">
+      <ModeSelection />
+    </Stack>
   );
 }
