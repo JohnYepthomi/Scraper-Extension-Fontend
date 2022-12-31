@@ -3,7 +3,7 @@ import ReactLogo from '../assets/react.svg';
 
 export default function Header() {
     return (
-        <Navbar bg="dark" variant="dark" className="shadow p-2">
+        <Navbar fixed='top' bg="dark" variant="dark" className="shadow p-2">
             <Container>
                 <Navbar.Brand href="#home">
                     <img
