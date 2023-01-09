@@ -18,6 +18,14 @@
 }
 
 
+/* Bootstrap table cell ellipsis */
+td, th{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {

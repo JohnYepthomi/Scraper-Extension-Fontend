@@ -1,7 +1,7 @@
-export default function NoTable() {
+export default function NoTable({ message }) {
     return (
-        <div style={{ height: "250px" }} className="d-flex flex-column justify-content-center align-items-center">
-            <div>Add a new table to begin</div>
+        <div style={ { height: "250px" } } className="d-flex flex-column justify-content-center align-items-center">
+            <div>{ message }</div>
         </div>
     );
 }

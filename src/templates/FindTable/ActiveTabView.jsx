@@ -22,7 +22,7 @@ export default function ActiveTabView() {
 
     useEffect(() => {
         const asyncFn = async () => {
-            const activeTabDetails = await asyncStorageGet('lastActiveTabId')
+            const activeTabDetails = await asyncStorageGet('lastActiveTabData');
             console.log({ activeTabDetails });
             setActiveTab(state => state = activeTabDetails);
         }
@@ -35,8 +35,8 @@ export default function ActiveTabView() {
             {
                 activeTab &&
                 <Stack direction="horizontal" gap='2' className="max-w-50 rounded p-1 border-secondary border border-1 d-flex justify-content-center align-items-center">
-                    <img src={activeTab.icon} width="15px" height="15px" alt="fav icon" />
-                    <p className="p-0 m-0"><small>{activeTab.title}</small></p>
+                    <img src={ activeTab.icon } width="15px" height="15px" alt="fav icon" />
+                    <p className="p-0 m-0"><small>{ activeTab.title }</small></p>
                 </Stack>
             }
         </Stack>
